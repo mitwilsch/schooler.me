@@ -22,26 +22,21 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const TopicCard = () => {
+const TopicCard = props => {
+  const { title, body, link } = props;
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
       <CardContent className={classes.cardContent}>
         <Typography gutterBottom variant="h5" component="h2">
-          Heading
+          {title}
         </Typography>
-        <Typography>
-          This is a media card. You can use this section to describe the
-          content.
-        </Typography>
+        <Typography>{body}</Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
-          View
-        </Button>
-        <Button size="small" color="primary">
-          Edit
+        <Button size="small" color="primary" href={link.href}>
+          {link.name}
         </Button>
       </CardActions>
     </Card>

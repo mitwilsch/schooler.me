@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Typography, AppBar, Toolbar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -15,7 +15,6 @@ const Header = () => {
   return (
     <AppBar position="relative">
       <Toolbar>
-        <CameraIcon className={classes.icon} />
         <Typography variant="h6" color="inherit" noWrap>
           Schooler
         </Typography>

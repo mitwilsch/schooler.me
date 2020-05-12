@@ -29,9 +29,10 @@ const Hero = () => {
         <Typography variant="h5" align="center" color="textSecondary" paragraph>
           Schooler Family Website
         </Typography>
-        <div className={classes.heroButtons}>
+        {/* <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
+              
               <Button variant="contained" color="primary">
                 Main call to action
               </Button>
@@ -42,7 +43,7 @@ const Hero = () => {
               </Button>
             </Grid>
           </Grid>
-        </div>
+  </div>*/}
       </Container>
     </div>
   );
