@@ -5,6 +5,8 @@ import { Footer, Header } from './Components';
 import FamilyTree from './Components/FamilyTree';
 import Main from './Components/Main';
 
+import tree from '../public/tree.pdf';
+
 const App = () => {
   return (
     <React.Fragment>
