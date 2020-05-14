@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "serve": "http-server dist -p 3000"
+    "serve": "http-server dist -p 80",
+    "dockerBuild": "docker build -t mitwilsch/schooler.me:latest"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.1",

@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
 const cards = [
   {
     title: 'Interactive Family Tree',
-    body: 'See the Schooler Family Tree. Ability to suggest edits coming soon',
+    body: 'See the Schooler Family Tree.',
     link: { href: '#family-tree', name: 'Family Tree' },
   },
 ];
