@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "schooler.me",
   "main": "src/server/index.js",
-  "homepage": "https://mitwilsch.github.io/schooler.me/",
+  "homepage": "mitwilsch.github.io/schooler.me/",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --devtool inline-source-map --hot",
