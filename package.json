@@ -3,16 +3,19 @@
   "version": "0.0.1",
   "description": "schooler.me",
   "main": "src/server/index.js",
+  "homepage": "https://github.io/mitwilsch/schooler.me/",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "serve": "npx http-server dist -p 80",
-    "dockerBuild": "docker build -t mitwilsch/schooler.me:latest ."
+    "dockerBuild": "docker build -t mitwilsch/schooler.me:latest .",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.1",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.13",
+    "gh-pages": "^6.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
