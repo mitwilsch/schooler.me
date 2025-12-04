@@ -47,7 +47,7 @@ const FamilyTree = () => {
         </Button>
 
         <Document
-          file={'public/tree.pdf'}
+          file={'/public/tree.pdf'}
           onLoadSuccess={handleNumPages}
           options={{
             cMapUrl: 'cmaps/',
