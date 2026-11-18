@@ -10,10 +10,10 @@ copyright = "Copyright &copy; 2026 Mitchell Schooler"
 # repo_name = "mitwilsch/mitchell.schooler.me"
 # edit_uri = "edit/main/docs/"
 
-nav = [
-  { "Home" = "index.md" },
-  { "Tree" = "tree.md" },
-]
+#nav = [
+#  { "Home" = "index.md" },
+#  { "Tree" = "tree.md" },
+#]
 
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
