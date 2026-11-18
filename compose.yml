@@ -1,0 +1,21 @@
+services:
+  zensical-builder:
+    image: zensical/zensical:latest
+    volumes:
+      - .:/docs
+    command: build --clean
+
+  web:
+    image: nginx:alpine
+    networks:
+      - npm_proxy
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    depends_on:
+      zensical-builder:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+networks:
+  npm_proxy:
+    external: true
